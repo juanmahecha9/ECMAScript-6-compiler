@@ -1,0 +1,26 @@
+{
+  "name": "compilador",
+  "version": "1.0.0",
+  "description": "Este programa esta diseñado para generar la transcripción de codigo de ECMAScript 6 y sus versiones posteriores con el fin de generar codigo de JavaScript comprendible por el navegador usando un transcompilador de JS gratuito y de código abierto conocido como **Babel**, esta herramienta se utiliza principalmente para convertir codigo de ECMAScript 2015+ a una versión de JS la cual sera interpretada por motores de busqueda que no son 100% compatibles con las nuevas actualizacione del mismo lenguaje.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist --source-maps --copy-files",
+    "clean": "rimraf dist",
+    "example": "babel-node src/index",
+    "example-compilation": "node dist/index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.0",
+    "@babel/node": "^7.13.13",
+    "@babel/preset-env": "^7.14.1",
+    "body-parser": "^1.19.0",
+    "fs-extra": "^10.0.0",
+    "nodemon": "^2.0.7",
+    "rimraf": "^3.0.2"
+  }
+}
