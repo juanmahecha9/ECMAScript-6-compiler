@@ -10,7 +10,7 @@ class Something {
   #property;
 
   constructor() {
-    this.#property = "URL";
+    this.#property = "texto";
   }
 
   #privateMethod() {
